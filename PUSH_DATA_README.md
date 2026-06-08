@@ -50,28 +50,63 @@ python generate_synthetic_data.py
 
 ### Bước 2: Setup Kiotviet API Credentials
 
+**⚠️ QUAN TRỌNG**: Kiotviet Public API cần **access token**, không phải direct API key!
+
+#### Cách 1: Dùng Access Token Trực Tiếp (Đơn Giản Hơn)
+
 Tạo hoặc edit `.env` file:
 
 ```bash
 # .env file
-KIOTVIET_RETAIL_ID=your_retail_id
-KIOTVIET_API_KEY=your_api_key
+KIOTVIET_ACCESS_TOKEN=your_access_token_here
+KIOTVIET_RETAILER_NAME=your_shop_name
 ```
 
-**Cách lấy credentials:**
+**Cách lấy:**
 1. Đi đến: https://kiotviet.vn
-2. Vào: **Settings → Developers/API**
-3. Tạo API Key hoặc lấy existing key
-4. Copy vào `.env`
+2. Đăng nhập bằng tài khoản Admin
+3. Vào: **Thiết lập → Kết nối API → Public API**
+4. Copy **Access Token** (nếu chưa có, tạo mới)
+5. Copy **Tên gian hàng** (ví dụ: "taphoaxyz")
+6. Paste vào `.env`
 
-**Kiểm tra credentials:**
+#### Cách 2: Dùng OAuth Client ID + Secret (Nâng Cao)
+
+Nếu muốn script tự động lấy token:
+
+```bash
+# .env file
+KIOTVIET_CLIENT_ID=your_client_id
+KIOTVIET_CLIENT_SECRET=your_client_secret
+KIOTVIET_RETAILER_NAME=your_shop_name
+```
+
+Script sẽ tự động lấy access token từ Kiotviet.
+
+**Cách lấy Client ID + Secret:**
+1. Kiotviet Dashboard → **Thiết lập → Kết nối API**
+2. Copy **Client ID** + **Client Secret**
+3. Paste vào `.env`
+
+#### Kiểm Tra .env
+
 ```bash
 # Linux/Mac
 cat .env
 
 # Windows
 type .env
+
+# Kết quả phải có:
+# KIOTVIET_ACCESS_TOKEN=...
+# KIOTVIET_RETAILER_NAME=...
+# (hoặc KIOTVIET_CLIENT_ID + KIOTVIET_CLIENT_SECRET)
 ```
+
+**Lưu ý**: 
+- ❌ Không dùng `KIOTVIET_RETAIL_ID` (sai!)
+- ❌ Không dùng `KIOTVIET_API_KEY` (sai!)
+- ✅ Dùng `KIOTVIET_ACCESS_TOKEN` hoặc Client ID + Secret
 
 ### Bước 3: Push Dữ Liệu Lên Kiotviet
 
@@ -276,6 +311,28 @@ echo "KIOTVIET_API_KEY=your_key" >> .env
 1. Kiểm tra API key từ Kiotviet console
 2. Kiểm tra Retail ID đúng không
 3. Tạo API key mới
+
+### ❌ "API error: 503 Service Unavailable"
+
+**Nguyên nhân**: Endpoint URL sai hoặc headers sai
+
+**Sửa**:
+```bash
+# 1. Kiểm tra .env có credentials đúng không
+cat .env  # hoặc: type .env (Windows)
+
+# 2. Kiểm tra KIOTVIET_BASE_URL trong script (phải là kiotapi.com)
+# BASE_URL phải: https://public.kiotapi.com
+# KHÔNG phải: https://public.kiotviet.vn (sai!)
+
+# 3. Kiểm tra headers:
+# Phải dùng: "Retailer": tên_gian_hàng
+# Phải dùng: "Authorization": Bearer {access_token}
+# KHÔNG dùng: "Retail-ID" (sai!)
+
+# 4. Cập nhật script mới (v2 fix endpoints)
+# Nếu vẫn dùng script cũ, hãy copy lại script fix mới
+```
 
 ### ❌ "products.csv not found"
 

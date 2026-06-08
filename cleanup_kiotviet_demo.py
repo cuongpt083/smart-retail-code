@@ -28,6 +28,8 @@ import time
 from pathlib import Path
 import sys
 from typing import List, Dict
+import pandas as pd
+import numpy as np
 
 # ============================================================================
 # CONFIGURATION
@@ -38,22 +40,92 @@ import os
 
 load_dotenv()
 
-KIOTVIET_RETAIL_ID = os.getenv('KIOTVIET_RETAIL_ID')
-KIOTVIET_API_KEY = os.getenv('KIOTVIET_API_KEY')
+# .env phải có 1 trong 2 cách:
+# Cách 1: Access Token trực tiếp
+KIOTVIET_ACCESS_TOKEN = os.getenv('KIOTVIET_ACCESS_TOKEN')
+KIOTVIET_RETAILER_NAME = os.getenv('KIOTVIET_RETAILER_NAME')
 
-# Kiotviet API endpoints
-KIOTVIET_BASE_URL = "https://public.kiotviet.vn"
-KIOTVIET_HEADERS = {
-    "Retail-ID": KIOTVIET_RETAIL_ID,
-    "Authorization": f"Bearer {KIOTVIET_API_KEY}",
-    "Content-Type": "application/json",
-}
+# Cách 2: Client ID + Secret (để lấy token)
+KIOTVIET_CLIENT_ID = os.getenv('KIOTVIET_CLIENT_ID')
+KIOTVIET_CLIENT_SECRET = os.getenv('KIOTVIET_CLIENT_SECRET')
+
+# Kiotviet Public API endpoints (NOT kiotviet.vn, use kiotapi.com)
+KIOTVIET_BASE_URL = "https://public.kiotapi.com"
+KIOTVIET_AUTH_URL = "https://id.kiotviet.vn/connect/token"
+
+# Headers sẽ được set sau khi có access token
+KIOTVIET_HEADERS = None
 
 # Rate limiting (Kiotviet allows ~100 requests/min)
 REQUEST_DELAY = 0.7  # 700ms between requests
 
 # Tracking file
 TRACKING_FILE = "demo_data_ids.json"
+
+# ============================================================================
+# HELPER: GET ACCESS TOKEN
+# ============================================================================
+
+def get_access_token():
+    """Get access token from Kiotviet. Supports 2 methods:
+    1. Direct access token in .env (KIOTVIET_ACCESS_TOKEN)
+    2. OAuth client_id + client_secret (lấy token từ Kiotviet)
+    """
+    global KIOTVIET_HEADERS
+
+    # Method 1: Use direct access token
+    if KIOTVIET_ACCESS_TOKEN and KIOTVIET_RETAILER_NAME:
+        KIOTVIET_HEADERS = {
+            "Retailer": KIOTVIET_RETAILER_NAME,
+            "Authorization": f"Bearer {KIOTVIET_ACCESS_TOKEN}",
+            "Content-Type": "application/json",
+        }
+        return True
+
+    # Method 2: Use OAuth to get token
+    if KIOTVIET_CLIENT_ID and KIOTVIET_CLIENT_SECRET:
+        try:
+            print("🔐 Lấy access token từ Kiotviet OAuth...")
+            payload = {
+                "scopes": "PublicApi.Access",
+                "grant_type": "client_credentials",
+                "client_id": KIOTVIET_CLIENT_ID,
+                "client_secret": KIOTVIET_CLIENT_SECRET,
+            }
+            headers = {
+                "Content-Type": "application/x-www-form-urlencoded",
+            }
+
+            response = requests.post(
+                KIOTVIET_AUTH_URL,
+                data=payload,
+                headers=headers,
+                timeout=10,
+            )
+
+            if response.status_code == 200:
+                data = response.json()
+                access_token = data.get('access_token')
+
+                # Tên gian hàng có thể lấy từ .env hoặc mặc định
+                retailer_name = KIOTVIET_RETAILER_NAME or "default"
+
+                KIOTVIET_HEADERS = {
+                    "Retailer": retailer_name,
+                    "Authorization": f"Bearer {access_token}",
+                    "Content-Type": "application/json",
+                }
+                print("  ✓ Lấy token thành công")
+                return True
+            else:
+                print(f"  ❌ Lỗi OAuth: {response.status_code}")
+                print(f"     {response.text}")
+                return False
+        except Exception as e:
+            print(f"  ❌ Lỗi lấy token: {e}")
+            return False
+
+    return False
 
 # ============================================================================
 # KIOTVIET API CLIENT FOR CLEANUP
@@ -74,9 +146,18 @@ class KiotvietDemoCleanup:
         }
 
     def load_tracking_file(self) -> bool:
-        """Load tracking file that was created during push"""
+        """Load tracking file and prepare API headers"""
         print("📖 Loading tracking file...")
 
+        # Step 1: Get access token
+        if not get_access_token():
+            print("  ❌ Cannot get access token from .env")
+            print("   Please set one of:")
+            print("     - KIOTVIET_ACCESS_TOKEN + KIOTVIET_RETAILER_NAME")
+            print("     - KIOTVIET_CLIENT_ID + KIOTVIET_CLIENT_SECRET")
+            return False
+
+        # Step 2: Load tracking file
         if not Path(TRACKING_FILE).exists():
             print(f"  ❌ {TRACKING_FILE} not found")
             print("   Did you run: python push_data_to_kiotviet.py ?")

@@ -1,0 +1,201 @@
+ma_khach_hang,ten_khach_hang,loai_khach,dien_thoai,email,dia_chi,khu_vuc_giao_hang,phuong_xa,ngay_sinh,gioi_tinh,tong_ban,no_can_thu,ngay_giao_dich_cuoi,ngay_tao,trang_thai
+KH01001,Bà Nhật Mai,Cá nhân,+84-58-79204,dangjane@example.net,"953 Trần Ngõ
+JaneQuận, 147612",Sài Gòn,Huyện JaneThành phố,1987-11-01,F,2500000,0,2026-05-28,2025-11-17T23:15:23.600875,1
+KH01002,Lâm Trí Hoàng,Cá nhân,01 1636 0649,tranjohn@example.net,"82 Jane Đường
+Quận JohnQuận, 467385",Sài Gòn,JohnXã,1953-12-16,F,7600000,0,2026-05-12,2025-10-05T23:15:23.601049,1
+KH01003,Thành Mai Bùi,Cá nhân,(08) 3799 05,jane15@example.com,"27 Đặng Khu
+Quận JanePhường, 919100",Sài Gòn,JanePhường,1981-11-11,M,5000000,0,2026-05-15,2025-08-05T23:15:23.601197,1
+KH01004,Bảo Quang Mai,Cá nhân,+84 93 69716,john15@example.com,"8 Jane Tổ
+Quận JohnHuyện, 559701",Hà Nội,JohnHuyện,1979-10-13,F,2600000,0,2026-06-05,2025-06-09T23:15:23.601425,1
+KH01005,Yến Dương,Cá nhân,+84-53-984 3,vujane@example.com,"52 Phạm Số
+JohnPhường, 664828",Hà Nội,JaneHuyện,1977-04-28,M,9500000,0,2026-06-01,2026-04-28T23:15:23.601567,1
+KH01006,Bác Quang Nguyễn,Cá nhân,+84 30 66016,opham@example.net,"639 John Làng
+Thành phố JohnThị xã, 679301",Hà Nội,JaneThành phố,1970-06-21,M,1700000,0,2026-05-17,2026-03-11T23:15:23.601731,1
+KH01007,Ông Phúc Trần,Cá nhân,(07)305-5200,john04@example.com,"00 John Hẻm
+JanePhường, 791698",Hà Nội,Quận JaneHuyện,1977-05-05,F,7100000,0,2026-05-14,2025-11-01T23:15:23.601886,1
+KH01008,Chi Đặng,Cá nhân,(03) 7590 06,qtran@example.org,"51 Nguyễn Hẻm
+JohnQuận, 954766",Hà Nội,JaneHuyện,1985-12-17,M,7900000,0,2026-06-02,2025-11-30T23:15:23.602026,1
+KH01009,Châu Hoàng,Cá nhân,+84-63-904 5,jane20@example.org,"4 Bùi Làng
+JohnHuyện, 512208",Hà Nội,Thành phố JohnXã,1950-05-11,M,9300000,0,2026-05-20,2025-10-28T23:15:23.602167,1
+KH01010,Bác Hưng Dương,Cá nhân,+84 23 76411,jane19@example.net,"987 John Đường
+JaneThành phố, 675656",Sài Gòn,Quận JohnThị xã,1968-09-01,M,1200000,0,2026-05-16,2025-06-21T23:15:23.602365,1
+KH01011,Lâm Văn Phạm,Cá nhân,02 6782777,lejohn@example.org,"2 Mai Đường
+JaneXã, 256367",Hà Nội,Thành phố JaneXã,1951-01-03,M,7100000,0,2026-05-29,2025-07-05T23:15:23.604268,1
+KH01012,Quý cô Chi Phạm,Cá nhân,(08) 9064 55,vujane@example.org,"83 Bùi Số
+JaneThị xã, 968816",Hà Nội,JohnXã,1978-09-21,M,3800000,0,2026-05-25,2025-10-31T23:15:23.604520,1
+KH01013,Chi Hoàng,Cá nhân,+84 54 60737,jane87@example.com,"6 Jane Hẻm
+JaneThị xã, 873944",Hà Nội,JaneThị xã,1992-11-13,F,600000,0,2026-05-25,2025-08-31T23:15:23.604695,1
+KH01014,Quang Phạm,Cá nhân,(09)551-3163,janehoang@example.org,"7 Đặng Làng
+JohnQuận, 941109",Hà Nội,Quận JohnXã,1987-11-09,F,9600000,0,2026-05-18,2025-09-15T23:15:23.604856,1
+KH01015,Lâm Mai,Cá nhân,+84-97-813 4,john39@example.org,"33 John Tổ
+Quận JaneHuyện, 120455",Hà Nội,Thành phố JanePhường,1979-06-19,F,2200000,0,2026-05-22,2025-06-09T23:15:23.605006,1
+KH01016,Trung Hải Trần,Cá nhân,09 7115 6008,hoangjane@example.com,"2 Jane Tổ
+Huyện JaneQuận, 355086",Sài Gòn,Quận JohnThị xã,1974-10-07,F,4900000,0,2026-05-12,2025-07-09T23:15:23.605185,1
+KH01017,Cô Linh Hoàng,Cá nhân,04 0159 4724,john28@example.net,"714 John Khu
+Huyện JohnPhường, 965476",Sài Gòn,JaneXã,1999-09-23,F,8600000,0,2026-05-12,2026-03-25T23:15:23.606514,1
+KH01018,Cô Thành Đặng,Cá nhân,+84 02 84208,johnpham@example.org,"Huyện JaneThị xã
+9 John Tổ, 318284",Sài Gòn,Quận JohnQuận,1998-03-18,F,2800000,0,2026-05-24,2025-07-21T23:15:23.606839,1
+KH01019,Kim Dương,Cá nhân,+84-90-38547,john51@example.com,"0 Vũ Khu
+JanePhường, 243686",Sài Gòn,Huyện JaneXã,1998-09-03,F,800000,0,2026-05-11,2025-11-23T23:15:23.606994,1
+KH01020,Nhật Phú Bùi,Cá nhân,07 2289567,janehoang@example.com,"949 John Ngõ
+Thành phố JaneQuận, 110385",Hà Nội,Quận JanePhường,1959-09-20,F,2500000,0,2026-05-13,2025-12-27T23:15:23.607153,1
+KH01021,Nhiên Đặng,Cá nhân,(07)856-3115,john09@example.org,"Thị xã JaneThành phố
+915 John Làng, 513111",Sài Gòn,JohnPhường,1951-03-20,F,8900000,0,2026-05-16,2025-12-18T23:15:23.607390,1
+KH01022,Minh Hải Dương,Cá nhân,+84-12-962 1,emai@example.net,"19 John Khu
+Huyện JaneThành phố, 818306",Hà Nội,JohnQuận,1975-09-20,M,1300000,0,2026-05-15,2025-10-12T23:15:23.607542,1
+KH01023,Cô Kim Lê,Cá nhân,07 8164126,jane28@example.com,"242 Jane Đường
+JohnThành phố, 409017",Sài Gòn,Quận JaneThành phố,1988-05-27,M,7100000,0,2026-05-18,2025-08-30T23:15:23.607688,1
+KH01024,Hà Thị Bùi,Cá nhân,+84 10 99448,johnpham@example.org,"386 Jane Ngõ
+JanePhường, 393420",Sài Gòn,Quận JaneThị xã,1957-05-20,M,1400000,0,2026-05-31,2025-10-13T23:15:23.607828,1
+KH01025,Hà Hữu Mai,Cá nhân,02 2963892,johnvu@example.org,"2 Dương Số
+JaneQuận, 710567",Hà Nội,Thị xã JaneHuyện,1981-04-04,F,6800000,0,2026-05-27,2025-09-08T23:15:23.607963,1
+KH01026,Khoa Mai Bảo Nguyễn,Cá nhân,+84-89-27017,john45@example.org,"787 Jane Đường
+Quận JohnQuận, 946100",Sài Gòn,JohnHuyện,1977-03-04,F,10000000,0,2026-05-21,2025-11-20T23:15:23.608109,1
+KH01027,Hà Mai Trần,Cá nhân,(02) 4601 46,wle@example.org,"25 Jane Dãy
+JohnThị xã, 161088",Sài Gòn,JohnPhường,1973-05-31,F,3100000,0,2026-05-30,2026-01-10T23:15:23.608244,1
+KH01028,Bảo Dương,Cá nhân,+84-56-086 9,vujohn@example.com,"547 John Khu
+Quận JaneThị xã, 778660",Hà Nội,JanePhường,1999-01-11,M,3500000,0,2026-05-15,2025-08-07T23:15:23.608451,1
+KH01029,Linh Lê,Cá nhân,(02) 0598 34,john69@example.net,"9 Vũ Dãy
+JaneThị xã, 931656",Hà Nội,JohnPhường,1988-02-04,M,2600000,0,2026-05-23,2025-12-18T23:15:23.608583,1
+KH01030,Quang Tấn Hoàng,Cá nhân,07 9455 6840,janenguyen@example.com,"2 Jane Khu
+JaneQuận, 953943",Sài Gòn,JaneThành phố,2007-02-01,M,8400000,0,2026-05-29,2026-01-12T23:15:23.608732,1
+KH01031,Hưng Đặng,Cá nhân,(02) 9755 38,john49@example.org,"0 Jane Hẻm
+JaneHuyện, 852071",Sài Gòn,JohnXã,1951-04-30,M,3400000,0,2026-05-16,2025-08-08T23:15:23.608866,1
+KH01032,Châu Bùi,Cá nhân,+84 91 78379,jane58@example.org,"8 Jane Dãy
+JanePhường, 285956",Hà Nội,Huyện JaneThành phố,1961-09-15,F,900000,0,2026-06-06,2025-07-29T23:15:23.608998,1
+KH01033,Quý cô Kim Lê,Cá nhân,09 3482220,janehoang@example.com,"8 John Khu
+JaneHuyện, 201430",Sài Gòn,Quận JaneThành phố,1983-08-19,M,6600000,0,2026-05-14,2025-08-30T23:15:23.609136,1
+KH01034,Hưng Trí Nguyễn,Cá nhân,+84-03-442 1,jane22@example.com,"9 Bùi Làng
+Huyện JanePhường, 998028",Hà Nội,JohnThị xã,1968-06-10,M,6000000,0,2026-05-23,2025-09-05T23:15:23.609271,1
+KH01035,Tú Thị Hoàng,Cá nhân,(08) 6585 09,janetran@example.org,"9 Jane Khu
+Thành phố JohnQuận, 241422",Sài Gòn,Thị xã JohnPhường,1978-05-02,F,2300000,0,2026-06-06,2025-12-30T23:15:23.609478,1
+KH01036,Ông Trọng Phạm,Cá nhân,(07) 5229 16,duongjohn@example.net,"64 John Số
+JaneThị xã, 206715",Sài Gòn,JaneQuận,1954-06-08,M,8300000,0,2026-05-26,2025-08-30T23:15:23.609616,1
+KH01037,Hạnh Thị Nguyễn,Cá nhân,+84-65-816 2,janeduong@example.org,"583 Trần Dãy
+Huyện JohnHuyện, 996024",Hà Nội,JohnQuận,1948-11-04,M,1900000,0,2026-05-13,2025-07-24T23:15:23.609756,1
+KH01038,Mai Hoàng,Cá nhân,+84-61-85169,nguyenjane@example.net,"20 John Khu
+Quận JaneQuận, 443368",Sài Gòn,Thị xã JaneHuyện,1956-11-01,M,9900000,0,2026-06-04,2025-07-27T23:15:23.609898,1
+KH01039,Lâm Phạm,Cá nhân,05 3154 9658,vbui@example.org,"827 Nguyễn Hẻm
+JohnHuyện, 356891",Sài Gòn,JohnPhường,1969-12-15,M,7900000,0,2026-05-26,2025-09-20T23:15:23.610031,1
+KH01040,Quý cô Linh Vũ,Cá nhân,+84-85-268 1,bbui@example.net,"1 John Hẻm
+JohnPhường, 908071",Sài Gòn,JaneHuyện,1957-09-29,F,8700000,0,2026-05-25,2025-12-03T23:15:23.610162,1
+KH01041,Nam Mai,Cá nhân,+84-59-133 1,john11@example.org,"5 Jane Số
+JohnThành phố, 447101",Hà Nội,Thành phố JohnQuận,1950-08-02,M,9500000,0,2026-06-01,2025-06-22T23:15:23.610328,1
+KH01042,Cô Lâm Nguyễn,Cá nhân,+84-06-92671,phamjohn@example.org,"159 John Tổ
+Thành phố JaneQuận, 584003",Hà Nội,JohnThị xã,1956-02-28,F,6800000,0,2026-06-02,2026-01-06T23:15:23.610497,1
+KH01043,Anh Mai Bùi,Cá nhân,+84-02-50374,john31@example.org,"625 Mai Ngõ
+Thành phố JaneQuận, 463113",Hà Nội,Thành phố JohnThành phố,1975-03-24,M,2000000,0,2026-05-25,2025-09-20T23:15:23.610636,1
+KH01044,Anh Mai,Cá nhân,02 1004084,phamjane@example.net,"485 Jane Khu
+JohnThành phố, 456234",Sài Gòn,Thành phố JohnThành phố,1981-08-15,F,800000,0,2026-05-29,2025-12-15T23:15:23.610772,1
+KH01045,Cô Xuân Đặng,Cá nhân,(03)930-4454,ule@example.com,"Huyện JohnPhường
+7 John Khu, 291872",Sài Gòn,JaneThị xã,1980-04-24,M,7000000,0,2026-05-09,2025-12-24T23:15:23.610905,1
+KH01046,Kim Trí Lê,Cá nhân,+84-01-72140,janele@example.net,"6 Mai Làng
+Thành phố JanePhường, 812839",Hà Nội,Thị xã JohnThị xã,1957-04-28,F,1600000,0,2026-05-31,2025-06-11T23:15:23.611039,1
+KH01047,Hưng Mai,Cá nhân,+84-61-079 3,tbui@example.org,"72 John Đường
+Quận JaneThị xã, 286038",Hà Nội,JaneHuyện,1978-12-27,F,8400000,0,2026-06-05,2026-04-08T23:15:23.611179,1
+KH01048,Bà Vi Dương,Cá nhân,01 1356 9329,janebui@example.net,"786 Phạm Tổ
+JohnThị xã, 544203",Hà Nội,Thành phố JohnHuyện,2000-09-30,F,6200000,0,2026-05-12,2025-07-21T23:15:23.611378,1
+KH01049,Phúc Trí Hoàng,Cá nhân,(04) 4736 37,phamjohn@example.com,"4 Jane Đường
+JanePhường, 790078",Sài Gòn,Huyện JohnThành phố,1963-02-12,F,1700000,0,2026-05-16,2025-12-04T23:15:23.611520,1
+KH01050,Hà Thế Mai,Cá nhân,01 1523 6905,johnvu@example.com,"70 Vũ Khu
+JohnXã, 367017",Sài Gòn,JohnHuyện,1970-01-20,F,5300000,0,2026-05-23,2025-09-26T23:15:23.611652,1
+KH01051,Anh Bùi,Cá nhân,(01)649-8078,pduong@example.org,"3 Nguyễn Dãy
+JohnPhường, 477773",Hà Nội,Quận JaneThị xã,1993-02-24,M,8900000,0,2026-05-15,2025-11-24T23:15:23.611787,1
+KH01052,Quý cô Xuân Lê,Cá nhân,09 7773 6553,maijane@example.org,"19 Dương Dãy
+JanePhường, 165906",Sài Gòn,JohnPhường,1987-06-30,M,1400000,0,2026-05-08,2025-07-18T23:15:23.611919,1
+KH01053,Bà Bảo Lê,Cá nhân,02 5237272,nguyenjohn@example.org,"2 Nguyễn Ngõ
+JohnThị xã, 198866",Hà Nội,Huyện JaneThị xã,1960-12-19,F,6000000,0,2026-05-14,2026-02-08T23:15:23.612053,1
+KH01054,Thảo Phạm,Cá nhân,(09) 8012 07,johnmai@example.net,"81 Jane Làng
+Thị xã JohnHuyện, 816484",Sài Gòn,Thị xã JohnThị xã,1971-09-14,F,9200000,0,2026-06-02,2025-07-13T23:15:23.612186,1
+KH01055,Hải Hoàng,Cá nhân,06 2683 4381,john38@example.com,"3 Jane Đường
+JaneXã, 299787",Sài Gòn,JohnThị xã,2000-11-16,F,9700000,0,2026-05-23,2025-11-11T23:15:23.612372,1
+KH01056,Nhật Lê,Cá nhân,04 5649944,john96@example.org,"529 Vũ Dãy
+JohnXã, 467563",Sài Gòn,JohnHuyện,1960-05-27,F,3600000,0,2026-06-04,2026-02-15T23:15:23.612508,1
+KH01057,Bác Anh Phạm,Cá nhân,(00) 5364 93,tranjane@example.org,"62 Jane Khu
+Huyện JohnXã, 370534",Sài Gòn,JaneXã,1996-10-03,F,7100000,0,2026-05-29,2025-10-15T23:15:23.612652,1
+KH01058,Xuân Phạm,Cá nhân,+84-15-89405,lvu@example.com,"95 Jane Dãy
+Thị xã JanePhường, 693123",Hà Nội,Thành phố JohnXã,2006-10-09,F,1300000,0,2026-05-30,2025-11-24T23:15:23.612786,1
+KH01059,Cô Linh Lê,Cá nhân,+84 12 50763,htran@example.net,"3 Dương Làng
+Thị xã JanePhường, 608374",Hà Nội,Thị xã JaneXã,1967-07-04,F,8700000,0,2026-05-12,2026-05-08T23:15:23.612921,1
+KH01060,Minh Đức Phạm,Cá nhân,03 1014 4120,johnle@example.com,"4 John Ngõ
+Thành phố JaneHuyện, 816884",Sài Gòn,JohnThị xã,1982-09-16,F,1000000,0,2026-05-22,2025-11-04T23:15:23.613055,1
+KH01061,Chi Hoàng,Cá nhân,+84-20-63893,wdang@example.net,"07 Vũ Tổ
+JaneQuận, 325883",Sài Gòn,JohnThị xã,1950-11-27,F,1500000,0,,2026-01-24T23:15:23.613177,1
+KH01062,Yến Đặng,Cá nhân,(04) 7962 37,fduong@example.net,"5 Vũ Đường
+Quận JohnHuyện, 703272",Sài Gòn,Thị xã JaneThị xã,1947-06-03,M,1900000,0,,2025-09-26T23:15:23.613420,1
+KH01063,Quý ông Minh Phạm,Cá nhân,+84-45-693 0,tranjane@example.com,"7 Jane Tổ
+JanePhường, 782840",Sài Gòn,Thành phố JohnThị xã,1965-08-21,M,200000,0,,2025-06-20T23:15:23.613573,1
+KH01064,Chị Mai Bùi,Cá nhân,06 2705499,johnnguyen@example.net,"171 Jane Ngõ
+Thành phố JaneThành phố, 855609",Hà Nội,Quận JohnQuận,1983-01-23,M,700000,0,,2026-05-01T23:15:23.613720,1
+KH01065,Hoàng Xuân Mai,Cá nhân,07 1674 3777,johntran@example.net,"4 Trần Tổ
+Quận JohnXã, 695828",Sài Gòn,Huyện JohnPhường,1953-01-24,M,500000,0,,2026-03-11T23:15:23.613853,1
+KH01066,Cô Mai Vũ,Cá nhân,+84-27-83270,wbui@example.net,"8 Jane Ngõ
+JohnXã, 686721",Sài Gòn,Quận JaneThành phố,1976-11-17,M,1300000,0,,2026-02-19T23:15:23.614015,1
+KH01067,Quý ông Trọng Lê,Cá nhân,+84-44-163 6,johnle@example.com,"678 Vũ Tổ
+JaneThị xã, 301208",Sài Gòn,Huyện JohnQuận,1991-06-18,F,1100000,0,,2025-12-20T23:15:23.614164,1
+KH01068,Dương Mai,Cá nhân,(03)587-5364,john48@example.org,"744 Mai Số
+JaneHuyện, 367276",Sài Gòn,Quận JohnXã,1954-03-08,F,2000000,0,,2026-01-04T23:15:23.614368,1
+KH01069,Quý cô Xuân Dương,Cá nhân,(00)931-8124,jane95@example.com,"Quận JohnQuận
+6 John Dãy, 247675",Sài Gòn,JohnThị xã,1997-04-02,M,800000,0,,2025-07-06T23:15:23.614524,1
+KH01070,Chị Hà Bùi,Cá nhân,+84-44-300 1,jnguyen@example.net,"90 Lê Số
+Thành phố JaneQuận, 823256",Hà Nội,JohnQuận,1965-06-02,M,600000,0,,2025-10-08T23:15:23.614666,1
+KH01071,Khoa Xuân Dương,Cá nhân,+84 96 70900,maijane@example.org,"76 John Tổ
+Quận JaneXã, 558321",Sài Gòn,JaneHuyện,1958-09-29,F,1700000,0,,2025-12-15T23:15:23.614801,1
+KH01072,Hạnh Lê,Cá nhân,(08) 0901 15,nguyenjane@example.net,"968 Jane Làng
+Quận JaneXã, 910347",Sài Gòn,JanePhường,1959-11-04,F,1700000,0,,2025-09-22T23:15:23.614935,1
+KH01073,Bảo Đặng,Cá nhân,+84 80 73816,phamjohn@example.net,"Huyện JanePhường
+9 Jane Hẻm, 960903",Sài Gòn,JaneQuận,2005-09-27,F,700000,0,,2025-08-03T23:15:23.615064,1
+KH01074,Bác Trọng Đặng,Cá nhân,+84-66-101 8,phamjane@example.org,"33 Nguyễn Số
+Quận JohnQuận, 964267",Sài Gòn,JohnHuyện,1984-12-09,F,1900000,0,,2026-02-01T23:15:23.615199,1
+KH01075,Ánh Hoàng,Cá nhân,03 5836192,dbui@example.com,"85 Dương Hẻm
+JanePhường, 199667",Hà Nội,Thành phố JaneThành phố,1945-12-07,F,500000,0,,2025-10-10T23:15:23.615420,1
+KH01076,Chị Mai Hoàng,Cá nhân,01 7627 3366,john73@example.com,"16 John Khu
+Thành phố JanePhường, 715434",Hà Nội,JohnPhường,2003-07-12,F,1500000,0,,2025-10-25T23:15:23.615555,1
+KH01077,Khoa Bùi,Cá nhân,(01)330-8331,johnpham@example.com,"5 Phạm Đường
+JaneHuyện, 567085",Sài Gòn,JaneXã,1998-11-13,M,1000000,0,,2026-04-20T23:15:23.615680,1
+KH01078,Lâm Lê,Cá nhân,(06) 8254 95,fmai@example.com,"5 John Làng
+JohnQuận, 904351",Hà Nội,Quận JohnQuận,1956-06-24,F,1800000,0,,2025-09-25T23:15:23.615804,1
+KH01079,Thành Tấn Vũ,Cá nhân,(04) 9704 83,janevu@example.com,"176 Jane Dãy
+Thành phố JohnQuận, 334500",Hà Nội,JaneThị xã,1948-05-02,F,100000,0,,2026-02-24T23:15:23.615936,1
+KH01080,Khoa Xuân Nguyễn,Cá nhân,06 7892723,janetran@example.org,"19 Jane Tổ
+Huyện JohnHuyện, 775011",Sài Gòn,JohnXã,1976-08-25,M,200000,0,,2025-12-24T23:15:23.616062,1
+KH01081,Thảo Dương,Cá nhân,(07)909-9380,johnle@example.org,"045 John Ngõ
+Huyện JaneHuyện, 732970",Sài Gòn,JaneThành phố,1960-04-03,F,1300000,0,,2025-11-21T23:15:23.616189,1
+KH01082,Anh Nhiên Dương,Cá nhân,(05) 2557 04,lhoang@example.com,"984 Lê Số
+JanePhường, 850212",Sài Gòn,JohnQuận,1976-08-05,F,1300000,0,,2025-09-01T23:15:23.616389,1
+KH01083,Nhật Trí Hoàng,Cá nhân,+84-03-01834,dangjohn@example.net,"6 Jane Tổ
+JaneQuận, 660526",Hà Nội,JanePhường,1957-04-03,M,500000,0,,2025-12-12T23:15:23.616521,1
+KH01084,Cô Nhật Bùi,Cá nhân,+84 43 66329,uhoang@example.org,"JohnPhường
+83 Bùi Làng, 648308",Hà Nội,Thị xã JohnPhường,1980-07-16,M,900000,0,,2026-03-19T23:15:23.616658,1
+KH01085,Bảo Dương,Cá nhân,(05)354-5043,jane15@example.org,"8 Jane Ngõ
+Thành phố JohnXã, 102522",Hà Nội,JohnQuận,1981-12-04,F,400000,0,,2025-12-06T23:15:23.616783,1
+KH01086,Hạnh Phú Dương,Cá nhân,+84 97 90563,janebui@example.org,"39 Hoàng Làng
+JaneThành phố, 743519",Hà Nội,Thị xã JohnXã,1993-10-22,M,700000,0,,2026-04-10T23:15:23.616951,1
+KH01087,Quý cô Chi Vũ,Cá nhân,07 5428456,johnhoang@example.net,"1 Dương Đường
+Thành phố JohnThành phố, 412247",Sài Gòn,Quận JaneHuyện,1947-09-25,F,800000,0,,2026-02-23T23:15:23.617084,1
+KH01088,Cô Phương Trần,Cá nhân,+84-38-04030,janenguyen@example.net,"114 John Đường
+Huyện JaneXã, 432776",Hà Nội,JohnHuyện,2004-06-05,F,1200000,0,,2026-02-05T23:15:23.617216,1
+KH01089,Hải Thị Mai,Cá nhân,04 1200 6273,dangjane@example.net,"56 John Hẻm
+JohnQuận, 803067",Hà Nội,Thị xã JaneThành phố,1991-07-28,M,300000,0,,2025-10-25T23:15:23.617419,1
+KH01090,Cô Nhật Dương,Cá nhân,+84-55-86427,tranjohn@example.net,"2 John Làng
+Huyện JohnQuận, 131173",Hà Nội,JohnXã,1958-03-15,F,1800000,0,,2026-02-24T23:15:23.617551,1
+KH01091,Anh Quang Vũ,Cá nhân,+84-30-79877,janehoang@example.org,"01 Phạm Số
+JaneXã, 535891",Hà Nội,JanePhường,1993-08-26,F,1300000,0,,2025-09-15T23:15:23.617676,1
+KH01092,Nhật Đức Trần,Cá nhân,(00)552-5047,janeduong@example.org,"1 Jane Đường
+Thị xã JaneXã, 944447",Sài Gòn,JanePhường,1995-07-14,M,1800000,0,,2025-09-12T23:15:23.617802,1
+KH01093,Quý cô Phương Vũ,Cá nhân,00 5048519,janedang@example.org,"66 Phạm Tổ
+Quận JaneThành phố, 821397",Sài Gòn,Quận JanePhường,1954-06-02,M,200000,0,,2025-11-13T23:15:23.617933,1
+KH01094,Vi Trần,Cá nhân,05 4428 0033,hoangjane@example.com,"6 John Tổ
+Quận JohnXã, 167225",Sài Gòn,Huyện JohnXã,1948-05-15,F,1400000,0,,2025-09-17T23:15:23.618063,1
+KH01095,Ông Anh Hoàng,Cá nhân,(09) 1257 65,wvu@example.com,"5 Nguyễn Số
+JaneXã, 809778",Sài Gòn,JohnHuyện,1982-08-21,M,2000000,0,,2025-09-03T23:15:23.618187,1
+KH01096,Cô Linh Bùi,Cá nhân,+84 54 80359,buijohn@example.org,"30 John Làng
+JohnXã, 495243",Hà Nội,JanePhường,1960-03-03,M,800000,0,,2025-11-06T23:15:23.618379,1
+KH01097,Quý cô Lâm Lê,Cá nhân,+84-06-863 1,phamjane@example.org,"66 Phạm Hẻm
+JaneThành phố, 841615",Sài Gòn,JaneThị xã,1965-05-17,F,100000,0,,2025-10-18T23:15:23.618515,1
+KH01098,Bà Duyên Vũ,Cá nhân,(00)264-6980,jane47@example.net,"8 Jane Dãy
+JaneHuyện, 450354",Sài Gòn,JohnPhường,2000-10-05,M,1200000,0,,2026-04-13T23:15:23.618637,1
+KH01099,Hà Hoàng Vũ,Cá nhân,+84-65-71491,johnbui@example.org,"94 Đặng Khu
+JaneQuận, 381215",Sài Gòn,JaneXã,1953-05-05,F,1600000,0,,2026-01-11T23:15:23.618766,1
+KH01100,Bà Bảo Phạm,Cá nhân,05 5428542,htran@example.net,"7 John Làng
+JohnHuyện, 883931",Sài Gòn,JohnThị xã,1996-04-10,M,1300000,0,,2025-06-25T23:15:23.618896,1

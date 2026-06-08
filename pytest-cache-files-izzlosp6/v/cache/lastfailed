@@ -1,0 +1,17 @@
+{
+  "tests/test_rfm_calculation.py::TestRFMScoring::test_recency_scoring_recent": true,
+  "tests/test_rfm_calculation.py::TestRFMScoring::test_recency_scoring_old": true,
+  "tests/test_rfm_calculation.py::TestRFMScoring::test_frequency_scoring_high": true,
+  "tests/test_rfm_calculation.py::TestRFMScoring::test_frequency_scoring_low": true,
+  "tests/test_rfm_calculation.py::TestRFMScoring::test_monetary_scoring_high": true,
+  "tests/test_rfm_calculation.py::TestRFMScoring::test_monetary_scoring_low": true,
+  "tests/test_apriori_algorithm.py::TestAprioriRuleGeneration::test_generate_rules_basic": true,
+  "tests/test_integration.py::TestKiotvietClient::test_get_customers": true,
+  "tests/test_integration.py::TestKiotvietClient::test_get_products": true,
+  "tests/test_integration.py::TestKiotvietClient::test_sync_to_sqlite": true,
+  "tests/test_integration.py::TestZaloMessenger::test_get_campaign_stats": true,
+  "tests/test_dashboard_zalo.py::TestMessageTemplates::test_get_lost_template": true,
+  "tests/test_dashboard_zalo.py::TestLogging::test_log_campaign_error": true,
+  "tests/test_production_hardening.py::TestConnectionPool::test_wal_mode_enabled": true,
+  "tests/test_production_hardening.py::TestCacheManager::test_cache_invalidate_all": true
+}

@@ -32,10 +32,48 @@ def calculate_recency(last_purchase_date: Optional[date], today: date) -> Option
     Returns:
         Number of days since last purchase, or None if never purchased
     """
-    if last_purchase_date is None:
+    if last_purchase_date is None or pd.isna(last_purchase_date):
         return None
 
-    recency = (today - last_purchase_date).days
+    if isinstance(today, datetime):
+        today = today.date()
+    elif isinstance(today, str):
+        try:
+            today = datetime.strptime(today.strip().split(' ')[0].split('T')[0], "%Y-%m-%d").date()
+        except ValueError:
+            pass
+
+    last_date = None
+    if isinstance(last_purchase_date, str):
+        last_purchase_date = last_purchase_date.strip()
+        if not last_purchase_date or last_purchase_date.lower() in ["none", "nat", "nan", "null"]:
+            return None
+        try:
+            if ' ' in last_purchase_date:
+                last_purchase_date = last_purchase_date.split(' ')[0]
+            elif 'T' in last_purchase_date:
+                last_purchase_date = last_purchase_date.split('T')[0]
+            last_date = datetime.strptime(last_purchase_date, "%Y-%m-%d").date()
+        except ValueError:
+            try:
+                last_date = datetime.fromisoformat(last_purchase_date).date()
+            except ValueError:
+                return None
+    elif isinstance(last_purchase_date, datetime):
+        last_date = last_purchase_date.date()
+    elif isinstance(last_purchase_date, date):
+        last_date = last_purchase_date
+    elif hasattr(last_purchase_date, 'to_pydatetime'):
+        last_date = last_purchase_date.to_pydatetime().date()
+    elif hasattr(last_purchase_date, 'date'):
+        last_date = last_purchase_date.date()
+    else:
+        return None
+
+    if last_date is None:
+        return None
+
+    recency = (today - last_date).days
     return max(0, recency)  # Ensure non-negative
 
 

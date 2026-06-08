@@ -13,6 +13,10 @@ import sys
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
+# Load environment variables from .env
+from dotenv import load_dotenv
+load_dotenv()
+
 from rfm_calculator import calculate_rfm_for_customers, calculate_rfm_summary
 from apriori_miner import analyze_market_basket
 from data_loader import DataLoader
@@ -28,6 +32,15 @@ import logging
 # Setup logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Start background data sync scheduler if enabled
+if os.getenv("SCHEDULER_ENABLED", "true").lower() == "true":
+    try:
+        scheduler_interval = int(os.getenv("SCHEDULER_INTERVAL_MINUTES", "5"))
+        start_refresh_scheduler(scheduler_interval)
+        logger.info(f"Background scheduler started successfully (interval: {scheduler_interval}m)")
+    except Exception as e:
+        logger.error(f"Failed to start background scheduler: {e}")
 
 # ============================================================================
 # PAGE CONFIGURATION
@@ -136,9 +149,15 @@ if role == "Sales Staff":
 
     st.divider()
 
+    # Create product code to name mapping
+    product_names = {}
+    if not products.empty:
+        product_names = dict(zip(products['ma_hang'], products['ten_hang']))
+
     # Apriori Recommendations - MAIN FEATURE
     st.subheader("🎯 Recommended Product Bundles")
 
+    bundles = []
     try:
         # Prepare transaction data for Apriori
         transactions = []
@@ -157,14 +176,16 @@ if role == "Sales Staff":
                 with [col1, col2, col3, col4, col5][idx]:
                     prod_a = bundle['product_a']
                     prod_b = bundle['product_b']
+                    name_a = product_names.get(prod_a, prod_a)
+                    name_b = product_names.get(prod_b, prod_b)
                     conf = bundle['confidence']
 
                     st.info(f"""
 **Bundle {idx+1}**
 
-{prod_a}
+{name_a}
 **+**
-{prod_b}
+{name_b}
 
 Confidence: {conf:.0%}
 Lift: {bundle['lift']:.1f}x
@@ -188,16 +209,30 @@ Lift: {bundle['lift']:.1f}x
         }).sort_values('so_luong', ascending=False).head(5)
 
         for prod, row in top_products.iterrows():
-            st.write(f"**{prod}** - {int(row['so_luong'])} sold, {row['thanh_tien']:,.0f} VND")
+            prod_name = product_names.get(prod, prod)
+            st.write(f"**{prod_name}** - {int(row['so_luong'])} sold, {row['thanh_tien']:,.0f} VND")
 
     with col2:
         st.subheader("💡 Quick Tips")
-        st.markdown("""
-- 65% who buy Bánh mì → also buy Nước
-- 55% who buy Mì ăn liền → also buy Gia vị
+        if bundles:
+            tips = []
+            for b in bundles[:3]:  # Display top 3 rules
+                prod_a = b['product_a']
+                prod_b = b['product_b']
+                name_a = product_names.get(prod_a, prod_a)
+                name_b = product_names.get(prod_b, prod_b)
+                conf = b['confidence']
+                tips.append(f"- **{conf:.0%}** who buy **{name_a}** → also buy **{name_b}**")
+            tips.append("- Bundle suggestions shown above")
+            tips.append("- Use bundles to increase avg transaction value")
+            st.markdown("\n".join(tips))
+        else:
+            st.markdown("""
+- No association rules found from transactions.
+- Try adding more transaction data to see tips.
 - Bundle suggestions shown above
 - Use bundles to increase avg transaction value
-        """)
+            """)
 
 # ============================================================================
 # MARKETING MANAGER DASHBOARD - PRIMARY: RFM
